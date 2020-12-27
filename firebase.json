@@ -1,6 +1,7 @@
 {
   "hosting": [
     {
+      "target": "getting-started",
       "public": "dist/getting-started",
       "ignore": [
         "firebase.json",
