@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "getting-started-1f402": {
+      "hosting": {
+        "getting-started": [
+          "getting-started-1f402"
+        ]
+      }
+    },
+    "getting-starte": {
+      "hosting": {
+        "getting-started": [
+          "getting-starte"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "getting-starte"
+  }
+}
