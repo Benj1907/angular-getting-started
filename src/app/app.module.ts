@@ -14,6 +14,7 @@ import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PwaService } from './pwa.service';
 
 @NgModule({
   imports: [
@@ -38,7 +39,7 @@ import { environment } from '../environments/environment';
     ShippingComponent
   ],
   bootstrap: [AppComponent],
-  providers: [CartService]
+  providers: [CartService,PwaService]
 })
 export class AppModule {}
 
