@@ -21,11 +21,11 @@ import { environment } from '../environments/environment';
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: "", component: ProductListComponent },
-      { path: "products/:productId", component: ProductDetailsComponent },
-      { path: "cart", component: CartComponent },
-      { path: "shipping", component: ShippingComponent }
-    ]),
+    { path: "", component: ProductListComponent },
+    { path: "products/:productId", component: ProductDetailsComponent },
+    { path: "cart", component: CartComponent },
+    { path: "shipping", component: ShippingComponent }
+], { relativeLinkResolution: 'legacy' }),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [
