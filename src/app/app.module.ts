@@ -12,6 +12,8 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { CartService } from "./cart.service";
 import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   imports: [
@@ -23,7 +25,8 @@ import { ShippingComponent } from "./shipping/shipping.component";
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent }
-    ])
+    ]),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [
     AppComponent,
